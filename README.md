@@ -7,16 +7,15 @@ Package license: MIT
 
 Feedstock license: BSD 3-Clause
 
-Summary: Tools for calculating ocean C and B chemistry.
+Summary: Tools for calculating ocean C and B chemistry
 
 
 
 Current build status
 ====================
 
-![Linux disabled](https://img.shields.io/badge/linux-disabled-lightgrey.svg)
-![OSX disabled](https://img.shields.io/badge/OSX-disabled-lightgrey.svg)
-![Windows disabled](https://img.shields.io/badge/Windows-disabled-lightgrey.svg)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/cbsyst-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/cbsyst-feedstock)
 
 Current release info
 ====================
