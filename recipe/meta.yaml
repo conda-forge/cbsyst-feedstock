@@ -5,20 +5,20 @@ package:
   version: {{ version }}
 
 source:
-  fn: cbsyst-{{ version }}.tar.gz
   url: https://github.com/oscarbranson/cbsyst/archive/v{{ version }}.tar.gz
   sha256: edd5f9a8c50b9b574698b8111c35f2bc2f6981d67eb352eaf27e39fadb76eefa
 
 build:
-  number: 0
-  skip: True  # [py2k]
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  number: 1
+  noarch: python
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv"
 
 requirements:
-  build:
-    - python
-    - setuptools
+  host:
+    - python >=3
+    - pip
   run:
+    - python >=3
     - numpy
     - scipy
     - uncertainties
@@ -33,7 +33,7 @@ about:
   home: https://github.com/oscarbranson/
   license: MIT
   license_file: LICENCE.txt
-  summary: 'Tools for calculating ocean C and B chemistry.'
+  summary: 'Tools for calculating ocean C and B chemistry'
 
 extra:
   recipe-maintainers:
