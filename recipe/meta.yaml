@@ -1,15 +1,15 @@
-{% set version = "0.3.5" %}
+{% set version = "0.3.6" %}
 
 package:
   name: cbsyst
   version: {{ version }}
 
 source:
-  url: https://github.com/oscarbranson/cbsyst/archive/v{{ version }}.tar.gz
-  sha256: edd5f9a8c50b9b574698b8111c35f2bc2f6981d67eb352eaf27e39fadb76eefa
+  url: https://github.com/oscarbranson/cbsyst/archive/{{ version }}.tar.gz
+  sha256: 947b7ea73875520f400e3912f82e98659fc1f2339d6f377d4e127e45f751d2f3
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv"
 
