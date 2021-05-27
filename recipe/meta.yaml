@@ -11,26 +11,35 @@ source:
 build:
   number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - python >=3
     - pip
+    - numpy
+    - pandas
+    - scipy
+    - tqdm
+    - uncertainties
   run:
     - python >=3
     - numpy
-    - scipy
-    - uncertainties
-    - tqdm
     - pandas
+    - scipy
+    - tqdm
+    - uncertainties
 
 test:
   imports:
     - cbsyst
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
-  home: https://github.com/oscarbranson/
+  home: https://github.com/oscarbranson/cbsyst
   license: MIT
   license_file: LICENCE.txt
   summary: Tools for calculating ocean C and B chemistry
