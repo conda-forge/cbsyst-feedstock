@@ -1,7 +1,7 @@
 About cbsyst
 ============
 
-Home: https://github.com/oscarbranson/
+Home: https://github.com/oscarbranson/cbsyst
 
 Package license: MIT
 
