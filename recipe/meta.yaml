@@ -15,20 +15,16 @@ build:
 
 requirements:
   host:
-    - python >=3
+    - python >=3.7
     - pip
-    - numpy
-    - pandas
-    - scipy
-    - tqdm
-    - uncertainties
   run:
-    - python >=3
-    - numpy
-    - pandas
-    - scipy
-    - tqdm
-    - uncertainties
+    - python >=3.7
+    - numpy >=1.13
+    - scipy >=0.18
+    - pandas >=0.19
+    - uncertainties >=3.0
+    - tqdm >=4.14
+    - kgen >=0.0.2
 
 test:
   imports:
