@@ -29,10 +29,11 @@ requirements:
 test:
   imports:
     - cbsyst
-  commands:
-    - pip check
-  requires:
-    - pip
+  # pymyami 2.0a4 declares sklearn instead of scikit-learn.
+  # commands:
+  #   - pip check
+  # requires:
+  #   - pip
 
 about:
   home: https://github.com/oscarbranson/cbsyst
