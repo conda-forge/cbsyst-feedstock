@@ -1,12 +1,12 @@
-{% set version = "0.4.3" %}
+{% set version = "0.4.4" %}
 
 package:
   name: cbsyst
   version: {{ version }}
 
 source:
-  url: https://github.com/oscarbranson/cbsyst/archive/{{ version }}.tar.gz
-  sha256: 4e56c952aa63d82068b0eef5a3a2af21a432958ab89c7138e6c68635367bef61
+  url: https://github.com/oscarbranson/cbsyst/archive/v{{ version }}.tar.gz
+  sha256: d061fb214f4760b4c06a2c71010461b28b3c2e9d4533edab4aebd2706cca8056
 
 build:
   number: 0
