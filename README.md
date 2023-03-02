@@ -1,11 +1,11 @@
-About cbsyst
-============
+About cbsyst-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/cbsyst-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/oscarbranson/cbsyst
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/cbsyst-feedstock/blob/main/LICENSE.txt)
 
 Summary: Tools for calculating ocean C and B chemistry
 
