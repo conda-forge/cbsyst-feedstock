@@ -1,4 +1,4 @@
-{% set version = "0.4.7" %}
+{% set version = "0.4.8" %}
 
 package:
   name: cbsyst
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/oscarbranson/cbsyst/archive/{{ version }}.tar.gz
-  sha256: d98199ea8613d7b889cbc60beeb83b609e5f8846501cdce9bfc49d6028306d3a
+  sha256: 5fa2dfa663a0dc6782506b9f718d44f47b905de82ddf07993dd610acde16e5b9
 
 build:
   number: 0
@@ -24,7 +24,7 @@ requirements:
     - pandas >=0.19
     - uncertainties >=3.0
     - tqdm >=4.14
-    - kgen >=0.0.2
+    - kgen >=0.2.0
 
 test:
   imports:
